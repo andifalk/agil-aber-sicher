@@ -253,10 +253,11 @@
                         <img src="images/security_scrum_overview.png" class="plain" width="100%">
                     </section>
                     <section>
-                        <h3>Rollenspezifische Security Trainings</h3>
+                        <h3>Security Trainings</h3>
                         <img src="images/board-928378_1920.jpg" class="plain" width="75%">
                     </section>
                     <section>
+                        <h3>Security Trainings</h3>
                         <img src="images/product_owner.png" class="plain" width="50%">
                         <br>
                         <ul>
@@ -267,6 +268,7 @@
                         </ul>
                     </section>
                     <section>
+                        <h3>Security Trainings</h3>
                         <img src="images/development_team.png" class="plain" width="50%">
                         <br>
                         <ul>
@@ -369,11 +371,34 @@
                         <img src="images/security_testing_parts.png" class="plain" width="90%">
                         <small>Quelle: <a href="https://www.owasp.org/index.php/OWASP_Testing_Project">www.owasp.org/index.php/OWASP_Testing_Project</a></small>
                     </section>
-
+                    <section>
+                        <h2>Entwickler Security Tests</h2>
+                        <h3 style="color: red">Bevor ein Angreifer kommt</h3>
+                        <ul>
+                            <li>Security Unit/Integrationstests</li>
+                            <li>OWASP ZAP (https://github.com/zaproxy/zaproxy)</li>
+                            <li>Burp Suite Free Ed. (https://portswigger.net/burp)</li>
+                            <li>SQLMap (http://sqlmap.org)</li>
+                        </ul>
+                    </section>
                     <section>
                         <h4>CI Commit-Stage mit statischer Analyse (SAST)</h4>
                         <img src="images/ci_commit_stage.png" class="plain" width="100%">
                     </section>
+                    <section>
+                        <h3>OWASP Dependency Check</h3>
+                        <ul>
+                            <li>Prüft Projektabhängigkeiten auf Sicherheitsprobleme</li>
+                            <li>Unterstützt Java und .NET Anwendungen</li>
+                            <li>Command line, Ant, Maven, Gradle, Jenkins, SBT</li>
+                        </ul>
+                        <p><small><a href="https://github.com/jeremylong/DependencyCheck">https://github.com/jeremylong/DependencyCheck</a></small></p>
+                    </section>
+                    <section>
+                        <h3>OWASP Dependency Check Report</h3>
+                        <p><img src="images/dependency_check_report.png" class="plain" width="100%"></p>
+                    </section>
+
                     <section>
                         <h4>CI Security-Stage mit dynamischer Analyse (DAST)</h4>
                         <img src="images/ci_acceptance_testing_stage.png" class="plain" width="100%">
@@ -390,41 +415,28 @@
                         <h3>Idealzustand: Security == Agil!</h3>
                         <img src="images/sprints_ideal_zustand.png" class="plain" width="100%">
                     </section>
-
                     <section>
-                        <h1>HTTPS (SSL / TLS) !!</h1>
-                        <h3>Validation (Destination Host)</h3>
-                        <h3>Data Confidentiality (Encryption)</h3>
-                        <h3>Data Integrity (Hashing)</h3>
+                        <h2>Security Officer (Champion) in <span style="color: red">Sec</span><span style="color: darkblue">Dev</span><span style="color: #1b91ff">Ops</span></h2>
+                        <img src="images/security_officer_devops.png" class="plain">
                     </section>
                     <section>
-                        <h2>HTTPS (SSL / TLS) !!</h2>
+                        <h2>HTTPS ist Pflicht !!</h2>
                         <p>
                             <a href="https://letsencrypt.org/">Let's Encrypt</a><br>
                             <a href="https://www.cloudflare.com/">CloudFlare</a><br>
                             <a href="https://http2.github.io/">HTTP/2</a>
                         </p>
-                        <img src="images/chrome-not-secure.gif" width="62%" class="plain">
+                        <img src="images/chrome-not-secure.gif" width="60%" class="plain">
                     </section>
                     <section>
-                        <h3>A9: Using Components with Known Vulnerabilities</h3>
-                        <img src="images/owasp_top_10_2017.png" class="plain" width="40%" height="40%">
-                    </section>
-                    <section data-background-image="images/equifax.png" data-background-size="55%">
-                    </section>
-                    <section>
-                        <h3>OWASP Dependency Check</h3>
-                        <ul>
-                            <li>Detects Vulnerabilities in Project Dependencies</li>
-                            <li>Supports Java and .NET applications</li>
-                            <li>Experimental: Python, Ruby, PHP, Node.js</li>
-                            <li>Command line, Ant, Maven, Gradle, Jenkins, SBT</li>
-                        </ul>
-                        <p><small><a href="https://github.com/jeremylong/DependencyCheck">https://github.com/jeremylong/DependencyCheck</a></small></p>
+                        <h4>HTTPS-Konfiguration überprüfen</h4>
+                        <img src="images/ssl_report_andreasfalk_de.png" class="plain">
+                        <p><small><a href="https://www.ssllabs.com/ssltest/">www.ssllabs.com/ssltest</a></small></p>
                     </section>
                     <section>
-                        <h3>OWASP Dependency Check Report</h3>
-                        <p><img src="images/dependency_check_report.png" class="plain" width="100%"></p>
+                        <h4>Security header überprüfen</h4>
+                        <img src="images/security_headers_andreasfalk_de.png" class="plain" width="75%">
+                        <p><small><a href="https://securityheaders.io/">securityheaders.io</a></small></p>
                     </section>
                 </section>
                 <section>
@@ -457,16 +469,7 @@
                     </section>
                 </section>
                 <section>
-                    <section>
-                        <h2>Test Your Application</h2>
-                        <h3 style="color: red">Before The Attacker Does</h3>
-                        <ul>
-                            <li>OWASP ZAP (https://github.com/zaproxy/zaproxy)</li>
-                            <li>Burp Suite Free Ed. (https://portswigger.net/burp)</li>
-                            <li>NMap (https://nmap.org)</li>
-                            <li>SQLMap (http://sqlmap.org)</li>
-                        </ul>
-                    </section>
+
                 </section>
                 <section>
                     <h1>References</h1>
