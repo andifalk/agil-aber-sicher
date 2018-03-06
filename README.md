@@ -12,5 +12,5 @@ Präsentation zum Vortrag "Agil aber sicher!"
 
 MIT licensed
 
-Copyright (c) 2018 Andreas Falk
+Copyright (c) by 2018 Andreas Falk
 
